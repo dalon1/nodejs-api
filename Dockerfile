@@ -23,5 +23,4 @@ COPY test test
 
 EXPOSE 8070
 # Confirm node version
-RUN node -v 
-CMD ['node', 'my-app/app.js']
+ENTRYPOINT ["node", "my-app/app.js"]
